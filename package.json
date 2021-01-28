@@ -1,23 +1,19 @@
 {
-  "name": "bpmnlint-plugin-example",
+  "name": "bpmnlint-plugin-bsim",
   "version": "0.5.1",
-  "description": "A bpmnlint example plug-in",
+  "description": "A bpmnlint plug-in for bsim integration",
   "main": "index.js",
   "scripts": {
     "all": "npm test",
     "test": "mocha test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bpmn-io/bpmnlint-plugin-example"
   },
   "keywords": [
     "bpmnlint",
     "plugin"
   ],
   "author": {
-    "name": "Nico Rehwaldt",
-    "url": "https://github.com/nikku"
+    "name": "Tobias Fehrer",
+    "url": "https://github.com/dtdi"
   },
   "license": "MIT",
   "devDependencies": {

@@ -2,14 +2,17 @@ module.exports = {
   configs: {
     recommended: {
       rules: {
-        'target-namespace': 'error'
-      }
+        "bsim/task-sim-required": "error",
+      },
     },
     all: {
       rules: {
-        'target-namespace': 'warn',
-        'no-manual-task': 'warn'
-      }
-    }
-  }
-}
+        "bsim/task-sim-required": "warn",
+        "bsim/global-sim-musthave": "error",
+        "bsim/sim-config-musthave": "error",
+        "bsim/distribution-rules": "warn",
+        "bsim/exclusiveGateway-sim-required": "warn",
+      },
+    },
+  },
+};
