@@ -12,6 +12,7 @@ module.exports = {
         "bsim/sim-config-musthave": "error",
         "bsim/distribution-rules": "warn",
         "bsim/exclusiveGateway-sim-required": "warn",
+        "bsim/duration-values": "warn",
       },
     },
   },
