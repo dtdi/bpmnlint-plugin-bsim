@@ -50,8 +50,6 @@ module.exports = function () {
       reporter.report(node.id, distributionMsg);
       return;
     }
-
-    console.log(node);
   }
 
   return {

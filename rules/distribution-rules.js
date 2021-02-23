@@ -12,6 +12,9 @@ module.exports = function () {
     if (!is(node, "bsim:Distribution")) return;
 
     const bpmnEle = node.$parent.$parent.bpmnElement;
+    if (!bpmnEle) {
+      console.log(node);
+    }
     if (!is(bpmnEle, "bpmn:Task")) return;
 
     // binomial

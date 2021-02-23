@@ -12,11 +12,8 @@ module.exports = function () {
 
       const bsim = node.bsim;
 
-      if (!bsim.outgoingSequenceFlow || !bsim.outgoingSequenceFlow.length) {
-        reporter.report(
-          node.id,
-          "Element is lacking bsim outgoingSequenceFlow specs"
-        );
+      if (!bsim.outgoing || !bsim.outgoing.length) {
+        reporter.report(node.id, "Element is lacking bsim outgoing specs");
       }
 
       let sumProbability = 0;
@@ -24,7 +21,7 @@ module.exports = function () {
         if (!sequenceFlow.bsim) {
           reporter.report(
             sequenceFlow.id,
-            "Element is lacking bsim outgoingSequenceFlow specs"
+            "Element is lacking bsim outgoing specs"
           );
         } else if (!sequenceFlow.bsim.branchingProbability) {
           reporter.report(
