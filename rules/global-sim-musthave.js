@@ -22,7 +22,10 @@ module.exports = function () {
     if (!timetables || !resourceData) return;
 
     resourceData.dynamicResource.forEach((resource) => {
-      if (is(resource, "bsim:dynamicResource") && !resource.timetable) {
+      if (
+        is(resource, "bsim:dynamicResource") &&
+        !resource.defaultTimetableId
+      ) {
         reporter.report(resource.id, "No TimeTable Attached");
       }
     });
